@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selamat Wisuda Tahfidz - Nadifa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-pattern"></div>
+
+  <main class="card">
+    <div class="card-header">
+      <div class="ornament">✦</div>
+      <div class="graduation-cap">
+        <svg viewBox="0 0 64 64" width="70" height="70" aria-hidden="true">
+          <path fill="#f8fafc" d="M32 8L4 22l28 14 28-14-28-14z"/>
+          <path fill="#e2e8f0" d="M32 36L4 22v6l28 14 28-14v-6L32 36z"/>
+          <path fill="#1a2a4a" d="M54 24v14c0 2-10 6-22 6s-22-4-22-6V24l22 11 22-11z"/>
+          <circle cx="54" cy="24" r="3.2" fill="#d4af37"/>
+          <path fill="#d4af37" d="M54 27v13" stroke="#d4af37" stroke-width="2.2"/>
+        </svg>
+      </div>
+      <div class="ornament">✦</div>
+    </div>
+
+    <p class="small-label">Wisuda Tahfidz Al-Qur’an</p>
+    <h1 class="title">Selamat Wisuda</h1>
+    <h2 class="name">Nadifa</h2>
+
+    <div class="divider">
+      <span class="line"></span>
+      <span class="diamond">◆</span>
+      <span class="line"></span>
+    </div>
+
+    <p class="message">
+      Alhamdulillah, perjalanan panjang menghafal kalamullah telah sampai di titik yang indah ini.
+      Semoga setiap ayat yang telah engkau hafal menjadi cahaya di dunia dan syafaat di akhirat.
+    </p>
+
+    <div class="highlight-box">
+      <p class="highlight-text">
+        “Semoga istiqomah terus ya dalam menghafal Al-Qur’an”
+      </p>
+    </div>
+
+    <p class="closing">
+      Jaga hafalanmu, teruslah muraja’ah, dan jadilah penjaga Al-Qur’an yang istiqomah.
+      <br /><br />
+      Barakallahu fiiki, Nadifa ✨
+    </p>
+
+    <div class="bottom-decor">
+      <div class="quran-icon">
+        <svg viewBox="0 0 48 48" width="38" height="38" aria-hidden="true">
+          <rect x="8" y="6" width="32" height="36" rx="2.5" fill="#1a2a4a" stroke="#e2e8f0" stroke-width="1.5"/>
+          <path d="M16 14h16M16 20h16M16 26h12" stroke="#e2e8f0" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M24 6v36" stroke="#e2e8f0" stroke-width="1" opacity="0.45"/>
+        </svg>
+      </div>
+      <p class="from">Dengan doa terbaik</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Dibuat dengan ❤️ untuk Nadifa</p>
+  </footer>
+</body>
+</html>
+:root {
+  --dongker: #0f1c33;
+  --dongker-light: #1a2a4a;
+  --abu-muda: #e8eef5;
+  --putih: #f8fafc;
+  --accent: #c5d4e8;
+  --gold: #d4af37;
+  --gold-soft: #e8c96a;
+  --text-muted: #a8b8cc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(145deg, #0a1424 0%, #152238 45%, #1c2f4a 100%);
+  color: var(--putih);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.bg-pattern {
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 15% 25%, rgba(212, 175, 55, 0.07) 0%, transparent 40%),
+    radial-gradient(circle at 85% 75%, rgba(197, 212, 232, 0.06) 0%, transparent 35%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 460px;
+  background: linear-gradient(165deg, var(--dongker-light) 0%, var(--dongker) 100%);
+  border-radius: 24px;
+  padding: 44px 36px 38px;
+  box-shadow:
+    0 25px 50px -12px rgba(0, 0, 0, 0.55),
+    0 0 0 1px rgba(212, 175, 55, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  text-align: center;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.ornament {
+  color: var(--gold);
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.small-label {
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--gold-soft);
+  margin-bottom: 8px;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.15rem;
+  font-weight: 700;
+  color: var(--putih);
+  margin-bottom: 4px;
+  letter-spacing: 0.3px;
+}
+
+.name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: var(--gold);
+  margin-bottom: 22px;
+  letter-spacing: 1px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.divider .line {
+  height: 1px;
+  width: 55px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.divider .diamond {
+  color: var(--gold);
+  font-size: 9px;
+}
+
+.message {
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.75;
+  color: var(--accent);
+  margin-bottom: 24px;
+}
+
+.highlight-box {
+  background: rgba(248, 250, 252, 0.06);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: 14px;
+  padding: 20px 22px;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.highlight-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 36px;
+  height: 2px;
+  background: var(--gold);
+  border-radius: 2px;
+}
+
+.highlight-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.12rem;
+  font-weight: 500;
+  color: var(--putih);
+  line-height: 1.55;
+  font-style: italic;
+}
+
+.closing {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin-bottom: 28px;
+}
+
+.bottom-decor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding-top: 6px;
+  border-top: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.from {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+}
+
+.footer {
+  margin-top: 26px;
+  font-size: 0.72rem;
+  color: rgba(168, 184, 204, 0.55);
+}
+
+@media (max-width: 500px) {
+  .card {
+    padding: 38px 26px 34px;
+  }
+  .title {
+    font-size: 1.9rem;
+  }
+  .name {
+    font-size: 1.55rem;
+  }
+}
